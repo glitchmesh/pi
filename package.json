@@ -1,0 +1,37 @@
+{
+  "name": "glitchmesh-pi",
+  "version": "1.0.0",
+  "description": "Glitchmesh pi",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "start": "node index.js",
+    "forever": "forever --minUptime 2000 --spinSleepTime 10000 index.js",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glitchmesh/hub.git"
+  },
+  "keywords": [
+    "glitchmesh"
+  ],
+  "author": "Caleb Troughton <caleb@imakewebthings.com> (http://imakewebthings.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glitchmesh/pi/issues"
+  },
+  "homepage": "https://github.com/glitchmesh/pi#readme",
+  "dependencies": {
+    "async": "^1.2.1",
+    "datauri": "^0.7.1",
+    "glob": "^5.0.12",
+    "nconf": "^0.7.1",
+    "ws": "^0.7.2"
+  },
+  "devDependencies": {
+    "husky": "^0.8.1",
+    "standard": "^4.4.0"
+  }
+}
